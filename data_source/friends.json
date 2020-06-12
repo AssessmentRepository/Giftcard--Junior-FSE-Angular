@@ -1,0 +1,54 @@
+{
+  "giftcard": [
+    {
+      "inr": 100,
+      "paisa": 10,
+      "recipientFname": "test",
+      "recipientLname": "test",
+      "streetaddress": "test",
+      "city": "test",
+      "state": "test",
+      "country": "india",
+      "pincode": 560000,
+      "buyerFname": "testbuyer",
+      "buyerLname": "testbuyer",
+      "phonenumber": 1122334455,
+      "email": "test@test.com",
+      "id": 1
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "username": "test",
+      "password": "test",
+      "role": "User",
+      "id": 2
+    }
+  ],
+  "login": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "firstName": "Admin",
+      "lastName": "User",
+      "role": "Admin",
+      "id": 1
+    },
+    {
+      "username": "user",
+      "password": "user",
+      "firstName": "Normal",
+      "lastName": "User",
+      "role": "User",
+      "id": 2
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "username": "test",
+      "password": "test",
+      "role": "User",
+      "id": 3
+    }
+  ]
+}

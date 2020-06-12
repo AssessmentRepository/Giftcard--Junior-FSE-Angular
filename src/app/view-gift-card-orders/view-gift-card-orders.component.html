@@ -1,0 +1,36 @@
+
+<table border="1">
+    <tr>
+        <th class="h1">Sl NO</th>
+        <th class="h2">Buyers Name</th>
+        <th class="h3">Shipping Address</th>
+        <th class="h4">City</th>
+        <th class="h5">Amount</th>
+        <th class="h6">Phone</th>
+    </tr>
+
+    <tr *ngFor="let order of orderData;let i = index">
+        <td>{{i + 1}}</td>
+        <td>
+         
+            {{order.buyerFname}} . {{order.buyerLname}}
+        </td>
+        <td>
+         
+            {{order.streetaddress}}
+        </td>
+        <td>
+         
+            {{order.city}}
+        </td>
+        <td>
+         
+            {{order.inr}} . {{order.paisa}}
+        </td>
+        <td>
+         
+            {{order.phonenumber}}
+        </td>
+      
+    </tr>
+</table>

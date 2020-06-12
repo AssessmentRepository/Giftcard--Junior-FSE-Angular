@@ -1,0 +1,141 @@
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit()" novalidate>
+    <label>Gift Card Amount</label>
+    <div class="form-group">
+        <label for="exampleInputinr">INR</label>
+        <input type="number" class="form-control" formControlName="inr" placeholder="INR">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.inr.touched && orderForm.controls.inr.errors?.required">
+            Please enter INR. !
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputpaisa">Paisa</label>
+        <input type="number" class="form-control" formControlName="paisa" placeholder="Paisa">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.paisa.touched && orderForm.controls.paisa.errors?.required">
+            Please enter Paisa.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputrecipientFname">First Name</label>
+        <input type="text" class="form-control" formControlName="recipientFname" placeholder="First Name">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.recipientFname.touched && orderForm.controls.recipientFname.errors?.required">
+            Please enter first name.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputrecipientLname">Last Name</label>
+        <input type="text" class="form-control" formControlName="recipientLname" placeholder="Last Name">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.recipientLname.touched && orderForm.controls.recipientLname.errors?.required">
+            Please enter last name.!
+        </small>
+    </div>
+
+
+    <label>Shipping Address</label>
+    <div class="form-group">
+        <label for="exampleInputstreetaddress">Street Address</label>
+        <input type="text" class="form-control" formControlName="streetaddress" placeholder="Street Address">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.streetaddress.touched && orderForm.controls.streetaddress.errors?.required">
+            Please enter streetaddress.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputcity">City</label>
+        <input type="text" class="form-control" formControlName="city" placeholder="City">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.city.touched && orderForm.controls.city.errors?.required">
+            Please enter city.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputstate">State</label>
+        <input type="text" class="form-control" formControlName="state" placeholder="State">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.state.touched && orderForm.controls.state.errors?.required">
+            Please enter state.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputcountry">Country</label>
+        <select formControlName="country">
+            <option value="india">
+                India
+            </option>
+            <option value="japan">
+                Japan
+            </option>
+            <option value="russia">
+                Russia
+            </option>
+            <option value="usa">
+                USA
+            </option>
+        </select>
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.country.touched && orderForm.controls.country.errors?.required">
+            Please enter country.!
+        </small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputpincode">Pincode</label>
+        <input type="number" class="form-control" formControlName="pincode" placeholder="Pincode">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.pincode.touched && orderForm.controls.pincode.errors?.required">
+            Please enter pincode.!
+        </small>
+    </div>
+    <label>Buyer's name</label>
+    <div class="form-group">
+        <label for="exampleInputbuyerFname">First Name</label>
+        <input type="text" class="form-control" formControlName="buyerFname" placeholder="First Name">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.buyerFname.touched && orderForm.controls.buyerFname.errors?.required">
+            Please enter first name.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputbuyerLname">Last Name</label>
+        <input type="text" class="form-control" formControlName="buyerLname" placeholder="Last Name">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.buyerLname.touched && orderForm.controls.buyerLname.errors?.required">
+            Please enter last name.!
+        </small>
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleInputphonenumber">Phone Number</label>
+        <input type="number" class="form-control" formControlName="phonenumber" placeholder="Phone Number">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.phonenumber.touched && orderForm.controls.phonenumber.errors?.required">
+            Please enter phone number.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputemail">Email</label>
+        <input type="email" class="form-control" formControlName="email" placeholder="Eamil">
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.email.touched && orderForm.controls.email.errors?.required">
+            Please enter email.!
+        </small>
+        <small class="form-text text-muted"
+            *ngIf="orderForm.controls.email.touched && orderForm.controls.email.errors?.email">
+            Enter the valid email .!
+        </small>
+    </div>
+
+    <button type="submit" >Place Order</button>
+
+</form>
